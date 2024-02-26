@@ -1,4 +1,4 @@
-@media (min-width: 385px) and (max-width:992px) {
+@media (min-width: 385px) and (max-width:768px) {
     .d-xxs-block {
         display: block !important
     }
