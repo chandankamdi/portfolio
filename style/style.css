@@ -196,7 +196,7 @@ div.second-page{
 
   div.second-page{
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto auto;
   }
   
   .personal-information{
