@@ -184,6 +184,10 @@ div.second-page{
   align-content: center;
 }
 
+.hide-1{
+  display: none;
+}
+
 /* Media Queries */
  @media (max-width: 768px){
   .empty-div{
@@ -196,7 +200,13 @@ div.second-page{
 
   div.second-page{
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 0.2fr 3fr;
+    
+  }
+
+  .chandan-photo{
+    background-image: none;
+    height: 50vh;
   }
   
   .personal-information{
@@ -208,17 +218,31 @@ div.second-page{
 }
 @media (min-width: 769px) and (max-width: 1024px){
   div.first-page{
+    
     grid-template-columns: 1fr 1fr;
   }
-
+  div.second-page{
+        grid-template-columns: 0.6fr 1.4fr;
+  
+  }
   .personal-information{
-    grid-template-columns: 1fr;
+    display: none;
+    /* grid-template-columns: 1fr;
     grid-template-rows: repeat(4,1fr);
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; */
+  }
+
+  .hide-1{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-content: center;
   }
 }
-@media (min-width: 1024px) and (max-width: 1280px){
+/* @media (min-width: 1024px) and (max-width: 1280px){
   div.first-page{
     grid-template-columns: 1fr 1fr;
   }
@@ -229,7 +253,7 @@ div.second-page{
     margin-top: 0;
     margin-bottom: 0;
   }
-}
+} */
 
 /* @media (min-width: 1201px) and (max-width: 1600px){
   div.first-page{
